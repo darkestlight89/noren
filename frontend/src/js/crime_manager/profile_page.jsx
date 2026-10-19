@@ -56,8 +56,6 @@ export default function ProfilePage({user}) {
                 <Card.Img className="profile-card-image" variant="top" src="" alt={`Photo 2 of ${person.name}`}/>
                 <Card.Img className="profile-card-image" variant="top" src="" alt={`Photo 3 of ${person.name}`}/>
                 <Card.Img className="profile-card-image" variant="top" src="" alt={`Photo 4 of ${person.name}`}/>
-                <Card.Img className="profile-card-image" variant="top" src="" alt={`Photo 5 of ${person.name}`}/>
-                <Card.Img className="profile-card-image" variant="top" src="" alt={`Photo 6 of ${person.name}`}/>
             </div>
             <Card.Body>
                     <p><b>Full Name: </b>{person?.name}</p>
