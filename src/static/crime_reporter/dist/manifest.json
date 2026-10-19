@@ -1,0 +1,18 @@
+{
+  "../images/breaking_news.jpg": {
+    "file": "assets/breaking_news-DX2DKDzH.jpg",
+    "src": "../images/breaking_news.jpg"
+  },
+  "crime_reporter/main.jsx": {
+    "file": "assets/crime_reporter-DSGqSsgm.js",
+    "name": "crime_reporter",
+    "src": "crime_reporter/main.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/crime_reporter-YK3NlQ_q.css"
+    ],
+    "assets": [
+      "assets/breaking_news-DX2DKDzH.jpg"
+    ]
+  }
+}

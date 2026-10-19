@@ -1,0 +1,53 @@
+/* Crime Reporter Styles */
+.column-card {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.reporting-form-field {
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-right: 60px;
+    margin-left: 60px;
+}
+
+#reporting-form-title {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.person-details-title {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.reporting-form-button {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#submit-successful-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#log-in-button {
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.log-entry {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+

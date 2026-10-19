@@ -1,0 +1,264 @@
+/* Features across multiple pages */
+
+/* Sliding Nav Bar */
+#sliding-nav-bar {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 260px;
+  height: 1025px;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 3;
+  opacity: 0;
+  margin-left: -210px;
+  padding-top: 5%;
+  transition: margin-left 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0px 4px 12px 0 grey;
+}
+
+#sliding-nav-bar.slideIn {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.sliding-nav-bar-item {
+  color: grey;
+  opacity: 1;
+}
+
+.sliding-nav-bar-item:hover {
+  color: lightgrey;
+}
+
+.sliding-nav-bar-search {
+    margin-left: -20px;
+}
+
+/* Profile cards*/
+
+.profile-cards {
+    width: 90vw;
+}
+
+.profile-card-image {
+    height:20vh;
+    width: auto;
+    margin: 1% 1%;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+/* Crime Manager Page Styles */
+
+#crime-manager-page-table td {
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+
+}
+
+#crime-manager-page-table td, #crime-manager-page-table th {
+    padding: 1% 1%;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+/* Incident Page Styles */
+
+/* Incident Table */
+.incident-page-table td, .incident-page-table th {
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    padding: 0 1%
+}
+
+/* Containers */
+.display-section {
+    margin-top: 5vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: fit-content;
+}
+
+.button-container {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.display-section .button-container button {
+    margin-top: 0;
+    min-width: 300px;
+}
+
+.api-container {
+    width: inherit;
+    height: inherit;
+    padding: 3% 3%
+}
+
+
+/*Log container */
+.api-container .log-container {
+   display: flex;
+   flex-direction: row;
+   height: fit-content;
+}
+
+.api-container .log-container .log-entries {
+    flex-basis: 50%;
+}
+
+.api-container .log-container .hide-button-container {
+    flex-basis: 50%;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.api-container .log-container .hide-button-container button{
+    margin: 20%;
+}
+
+
+/* Exhibit Table */
+.add-movement-button {
+    margin:5%;
+    padding: 1%;
+}
+
+.movement-submit-button {
+    margin: 3% 0;
+}
+
+.exhibit-submit-button {
+    margin:1%;
+    padding: 5%;
+}
+
+.edit-exhibit-button {
+    margin: 10px 30px 10px 0
+}
+
+.exhibit-edit-form {
+    display: flex;
+    gap: 1.5%;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+}
+
+.exhibit-edit-form Button {
+    flex: 0 0 5%;
+    width: fit-content;
+    text-align: center;
+    padding: 2px;
+}
+
+.shadow-table-cell{
+    display: flex;
+    padding: 0;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;}
+
+
+.shadow-table-cell:nth-child(2), .shadow-table-cell:nth-child(3), .shadow-table-cell:nth-child(4), .shadow-table-cell:nth-child(5) {
+    flex: 1 1 1;
+    width: 200px;
+}
+
+.shadow-table-cell:nth-child(5) .exhibit-input {
+    width: 150px;
+}
+
+.shadow-table-cell:nth-child(1), .shadow-table-cell:nth-child(6) {
+    flex: 0 0 1;
+    width: 150px;
+}
+
+.shadow-table-cell:nth-child(5), .shadow-table-cell:nth-child(6) {
+    position: relative;
+    left:1%
+}
+
+.shadow-table-cell:nth-child(1) {
+    position: relative;
+    right: 2%;
+}
+
+.exhibit-input {
+    text-align: center;
+}
+
+/*Add exhbit section */
+.display-section .form-container {
+    margin-top: 5vh;
+    padding: 0 1%
+}
+
+/* Task section*/
+#task-table tr th {
+    padding: 0 1vw;
+}
+
+#task-table .checkbox-column  {
+    text-align: center;
+}
+
+#task-table .checkbox-column .checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-button-container {
+    width: 85vw;
+    padding: 5vh 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#task-form-container {
+    margin-top: -10vh;
+}
+
+.task-form-group {
+    margin: 30px 0;
+}
+
+/* Profile Page Styles */
+
+.profile-column {
+    width:12vw;
+    height: fit-content;
+    margin: 0;
+}
+
+/* Search Result Page Styles */
+
+#search-results-table {
+    border-collapse: separate;
+    border-spacing: 1vw 0;
+}
+.search-results-table-data {
+    font-size: 20px;
+    min-width: fit-content;
+}
+
+/* Vehicle Page Styles */
+
+
+/* Task Page Styles */
+.task-page-row {
+    margin: 5vh 0;
+}

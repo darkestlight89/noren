@@ -1,0 +1,18 @@
+{
+  "src/images/breaking_news.jpg": {
+    "file": "django-assets/breaking_news-DX2DKDzH.jpg",
+    "src": "src/images/breaking_news.jpg"
+  },
+  "src/js/main/main.jsx": {
+    "file": "django-assets/crime_reporter-eTEJlsMP.js",
+    "name": "crime_reporter",
+    "src": "src/js/main/main.jsx",
+    "isEntry": true,
+    "css": [
+      "django-assets/crime_reporter-B_NTU5b5.css"
+    ],
+    "assets": [
+      "django-assets/breaking_news-DX2DKDzH.jpg"
+    ]
+  }
+}

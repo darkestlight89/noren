@@ -1,0 +1,6 @@
+django==5.0.7
+psycopg[binary]
+django-vite
+djangorestframework==3.14.0
+selenium
+django-cors-headers

@@ -1,0 +1,50 @@
+services:
+  web:
+    build: .
+    container_name: django_app
+    ports: 
+      - 8000:8000    
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      db:
+        condition: service_healthy
+        restart: true
+      selenium:
+          condition: service_healthy
+    env_file:
+      - .env
+  selenium:
+    image: selenium/standalone-chromium:latest
+    container_name: selenium
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "4444:4444"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:4444/status || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+  db:
+    image: postgres:17
+    container_name: postgres_db
+    volumes:
+      - postgres_db:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+volumes:
+  postgres_db:
+
+
+
+    

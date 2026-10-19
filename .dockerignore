@@ -1,0 +1,11 @@
+# Ignore node modules on host
+node_modules
+
+# Ignore Python cache files
+__pycache__
+*.pyc
+*.pyo
+
+# Ignore local environment files
+.env
+*.env

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load django_vite %}
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        {% vite_hmr_client %}
+        {% vite_asset 'src/js/main/main.jsx' %}
+    </head>
+    <body>
+        <div class="body">
+            <div id="root">
+        </div>
+    </body>
+</html>
